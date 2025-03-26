@@ -1,0 +1,52 @@
+.icon-button-border {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  .box {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: var(--primary-color);
+  }
+
+  $size: 7px;
+  $size: 2px;
+
+
+  .top-left {
+    border-radius: 10px 0 0 0;
+    top: -$size;
+    left: -$size;
+    filter: drop-shadow(-2px -2px $size rgba(0, 255, 255, 0.4));
+  }
+
+  .top-right {
+    border-radius: 0 10px 0 0;
+    top: -$size;
+    right: -$size;
+    filter: drop-shadow(2px -2px $size rgba(0, 255, 255, 0.4));
+  }
+
+  .bottom-left {
+    border-radius: 0 0 0 10px;
+    bottom: -$size;
+    left: -$size;
+    filter: drop-shadow(-2px 2px $size rgba(0, 255, 255, 0.4));
+  }
+
+  .bottom-right {
+    border-radius: 0 0 10px 0;
+    bottom: -$size;
+    right: -$size;
+    filter: drop-shadow(2px 2px $size rgba(0, 255, 255, 0.4));
+  }
+
+  .center {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    border-radius: 10px;
+  }
+}

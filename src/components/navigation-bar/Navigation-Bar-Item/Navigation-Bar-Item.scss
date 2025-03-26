@@ -1,0 +1,8 @@
+@import "./../../../variables.css";
+
+.navigation-bar-item {
+  color: var(--text-color);
+  flex: 1 1 100px; /* Flex-Wert sorgt dafür, dass sich die Breite dynamisch anpasst */
+  text-align: center;
+  text-wrap: nowrap;
+}

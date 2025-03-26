@@ -1,0 +1,24 @@
+@import "./../../variables.css";
+
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  height: 42px;
+  border-radius: 25px;
+  padding: 0 30px;
+  margin: 15px 0;
+  max-width: 80dvw;
+  z-index: 100;
+}
+
+.navigation-bar nav {
+  display: flex;
+  flex-wrap: nowrap; /* Ermöglicht das Umfließen der Elemente */
+  gap: 20px;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}

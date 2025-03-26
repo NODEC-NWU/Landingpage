@@ -1,0 +1,28 @@
+.service-point-container {
+  border: 2px var(--secondary-color);
+  border-style: dashed;
+  padding: clamp(5px, 2vw, 15px);
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+
+  .content-container {
+    display: flex;
+    justify-content: start;
+  }
+
+  .keyWords-container{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px 5px;
+  }
+
+  .platform-container {
+    margin-top: 30px;
+  }
+
+  .language-container {
+    margin-top: 30px;
+  }
+}

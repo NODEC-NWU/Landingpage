@@ -1,0 +1,38 @@
+.fact-point {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 11px;
+  max-width: 450px;
+  min-width: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fact-point::after {
+  content: "";
+  position: absolute;
+  width: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  --s: clamp(30px, 100%, 75px); /* the size on the corner */
+  --t: 5px;  /* the thickness of the border */
+  --g: 0; /* the gap between the border and image */
+
+  transform: translate(calc(-1 * var(--t)), calc(-1 * var(--t))) ;
+
+  background: #0000;
+  padding: var(--t);
+  outline: 2px solid var(--primary-color); /* the color here */
+  outline-offset: calc(-1*var(--t));
+  border-radius: 15px;
+  mask:
+          conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+          0 0/calc(100% - calc(1 / 2) * var(--s) - 50%)
+          calc(100% - calc(1/ 2) * var(--s) - 50% );
+}
+

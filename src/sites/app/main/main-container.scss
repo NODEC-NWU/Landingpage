@@ -1,0 +1,86 @@
+.main-container {
+  position: sticky;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 0;
+}
+
+.main-container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container .content .CompanyName {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-container #codeThe {
+  font-size: 22px;
+  font-weight: bold;
+  word-spacing: 0px;
+  line-height: 1;
+}
+
+.main-container #future {
+  font-size: 45px;
+  color: var(--primary-color);
+  font-weight: bold;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.main-container #with {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.main-container .CompanyName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: -30px;
+
+  #nodec {
+    font-size: 65px;
+    font-weight: bolder;
+    color: var(--secondary-color);
+    font-family: "Orbitron", sans-serif;
+    font-weight: 900;
+  }
+
+  .brace {
+    font-size: 110px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-family: "Orbitron", sans-serif;
+    font-weight: 450;
+    line-height: 1;
+
+
+    &.left {
+      margin-right: -7px;
+    }
+
+    &.right {
+      margin-left: -7px;
+    }
+  }
+}
+
+.main-container #subheader {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+}
+

@@ -1,0 +1,9 @@
+.what-we-do-container {
+
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    width: 100%;
+    grid-gap: 15px;
+  }
+}

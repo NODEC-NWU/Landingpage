@@ -1,0 +1,16 @@
+.star-rating {
+  display: flex;
+  gap: 2px;
+  position: relative;
+
+  .star, .half-star, .empty-star {
+    aspect-ratio: 1 / 1;
+    width: 35px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: #FFCC00
+    }
+  }
+}

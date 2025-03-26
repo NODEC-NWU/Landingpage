@@ -1,0 +1,17 @@
+.who-we-are-container {
+  position: relative;
+}
+
+.who-we-are-container .content-container {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(300px, 100%, 500px), 1fr));
+    grid-gap: 25px;
+
+    .column {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+:root {
+  --clr-border: #0ff;
+  --AnimationLength: 0px;
+}
+
+.button {
+  position: relative;
+  width: 100%;
+  height: 55px;
+  background-color: transparent;
+  border: none;
+  padding: 0 10px;
+
+
+  font-size: clamp(20px, 4vw, 50px);
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .content {
+      z-index: 1;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      line-height: 1;
+      overflow: hidden;
+    }
+  }
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  width: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  --s: 18px; /* the size on the corner */
+  --t: 5px;  /* the thickness of the border */
+  --g: 0; /* the gap between the border and image */
+
+  $size: 7px;
+
+  transform: translate(calc(-1 * var(--t)), calc(-1 * var(--t))) ;
+
+  background: #0000;
+  padding: var(--t);
+  outline: 2px solid var(--primary-color); /* the color here */
+  outline-offset: calc(-1*var(--t));
+  border-radius: 10px;
+  mask:
+          conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+          0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+          conic-gradient(#000 0 0) content-box;
+  transition: .4s;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.20);
+}
+
+.button:active {
+  background: rgba(0, 0, 0, 0.50) !important;
+}
