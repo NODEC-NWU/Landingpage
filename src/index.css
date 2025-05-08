@@ -65,6 +65,17 @@ p, span {
 
 p {
   text-align: justify;
+
+  em {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: var(--primary-color);
+    font-size: clamp(2.35rem, 4vw, 2.7rem);
+    font-weight: 600;
+    text-shadow: 0px 0px 3px #0ff7;
+    line-height: 1;
+  }
+
 }
 
 span {
@@ -76,7 +87,7 @@ hr {
   margin: clamp(10px, 1vw, 20px) 0;
   background-color: var(--text-color);
   border: 0 none;
-  height: 0.5px;
+  height: 1px;
   opacity: 0.6;
 }
 
@@ -116,7 +127,37 @@ body {
   padding: 0 !important;
   margin: 0 !important;
   width: 100%;
+  overflow: hidden;
+  position: relative;
 }
+
+#root.grid-background::before {
+  content: "";
+  position: fixed;
+  top: -300%;
+  left: -400%;
+  width: 800%;
+  height: 600%;
+  background-image:
+          linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 40px 40px; /* Grid-Größe */
+  transform: rotate(35deg); /* Drehung */
+  pointer-events: none;
+}
+
+@keyframes change_size {
+  0% {
+    background-size: 40px 40px;
+  }
+  50% {
+    background-size: 50px 50px;
+  }
+  100% {
+    background-size: 40px 40px;
+  }
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {

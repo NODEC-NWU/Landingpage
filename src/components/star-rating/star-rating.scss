@@ -1,16 +1,21 @@
 .star-rating {
-  display: flex;
-  gap: 2px;
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 2.5%;
+  width: 90%;
 
   .star, .half-star, .empty-star {
     aspect-ratio: 1 / 1;
-    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(40px, 100%, 60px);
 
     svg {
-      width: 100%;
+      fill: #FFCC00;
+      aspect-ratio: 1 / 1;
       height: 100%;
-      fill: #FFCC00
+      width: 100%;
     }
   }
 }

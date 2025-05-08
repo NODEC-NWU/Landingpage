@@ -1,9 +1,31 @@
 .what-we-do-container {
 
-  .content-container {
+  .content-container_1 {
     display: grid;
+
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     width: 100%;
-    grid-gap: 15px;
+    grid-gap: clamp(20px, 2.5vw, 45px);
   }
+  .content-container {
+    /**
+ * User input values.
+ */
+    --grid-layout-gap: clamp(35px, 1vw, 50px);
+    --grid-column-count: 2;
+    --grid-item--min-width: 360px;
+
+    /**
+     * Calculated values.
+     */
+    --gap-count: calc(var(--grid-column-count) - 1);
+    --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+    --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+    grid-gap: var(--grid-layout-gap);
+  }
+
+
 }

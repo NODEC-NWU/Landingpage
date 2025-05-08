@@ -16,36 +16,59 @@ function WhatWeDoContainer(){
                         {children: "Laravel", iconPath:"vite.svg"},
                         {children: "TypeScript", iconPath:"vite.svg"},
                     ]
-                }>
+                }
+                  languages={[
+                      {children: "JavaScript"},
+                      {children: "TypeScript"},
+                      {children: "PHP"},
+                      {children: "Python"},
+                      {children: "C#"},
+                  ]}>
                     lorem ipsum dolor sit amet consectetur adipiscing elit ullamcorper delenit possim takimata invidunt clita facilisis eirmod ut accumsan feugait sadipscing culpa feugiat cum eum cillum invidunt minim eum facer eu
                 </ServicePoint>
-                <ServicePoint title={"Applications"} keyWords={
-                    [
-                        {children: "React Native", iconPath:"vite.svg"},
-                        {children: "Xcode", iconPath:"vite.svg"},
-                    ]
-                } platforms={[
+                <ServicePoint title={"Desktop Applications"}
+                platforms={[
                     {children: "Windows"},
-                    {children: "Android"},
                     {children: "macOS"},
-                    {children: "iOS"},
-                    {children: "iPadOS"},
-                    {children: "watchOS"},
-                    {children: "visionOS"},
-                    {children: "tvOS"}
                 ]}
                 languages={[
-                    {children: "TypeScript"},
                     {children: "C#"},
                     {children: "C++"},
-                    {children: "php"},
-                    {children: "Python"},
-
+                    {children: "TypeScript"},
+                    {children: "Java"},
+                ]}
+                keyWords={[
+                    {children: "React Native", iconPath:"vite.svg"},
+                    {children: "WPF", iconPath:"vite.svg"},
                 ]}>
                     lorem ipsum dolor sit amet consectetur adipiscing elit ullamcorper delenit possim takimata invidunt clita facilisis eirmod ut accumsan feugait sadipscing culpa feugiat cum eum cillum invidunt minim eum facer eu
                 </ServicePoint>
-
-                <ServicePoint title={"Online Shop"} keyWords={
+                <ServicePoint title={"Mobile Applications"}
+                              platforms={[
+                                  {children: "Android"},
+                                  {children: "iOS"},
+                                  {children: "iPadOS"},
+                                  {children: "watchOS"},
+                                  {children: "visionOS"},
+                                  {children: "tvOS"}
+                              ]}
+                              languages={[
+                                  {children: "TypeScript"},
+                                  {children: "C#"},
+                                  {children: "C++"},
+                                  {children: "Swift"},
+                              ]}
+                keyWords={[
+                    {children: "React Native", iconPath:"vite.svg"},
+                ]}>
+                    lorem ipsum dolor sit amet consectetur adipiscing elit ullamcorper delenit possim takimata invidunt clita facilisis eirmod ut accumsan feugait sadipscing culpa feugiat cum eum cillum invidunt minim eum facer eu
+                </ServicePoint>
+                <ServicePoint title={"Online Shop"}
+                  platforms={[
+                      {children: "Website"},
+                      {children: "inApp"},
+                  ]}
+                  keyWords={
                     [
                         {children: "Shopify", iconPath:"vite.svg"},
                         {children: "PayPal", iconPath:"vite.svg"},

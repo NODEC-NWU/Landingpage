@@ -3,12 +3,24 @@
   width: 100%;
   height: 100%;
   aspect-ratio: 1 / 1;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 11px;
-  max-width: 450px;
-  min-width: 250px;
+  max-width: 350px;
+  min-width: 255px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.fact-point::before {
+  content: "";
+  position: absolute;
+  width: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 15px #0007;
+  border-radius: 10px;
 }
 
 .fact-point::after {
@@ -34,5 +46,39 @@
           conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
           0 0/calc(100% - calc(1 / 2) * var(--s) - 50%)
           calc(100% - calc(1/ 2) * var(--s) - 50% );
+}
+
+.fact-point-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  height: 100%;
+
+  .icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon-container {
+      width: 100%;
+      height: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      height: inherit;
+    }
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 

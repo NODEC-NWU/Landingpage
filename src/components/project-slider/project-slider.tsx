@@ -5,9 +5,6 @@ import ProjectSmallView, {ProjectSmallViewProbs} from "../project-small-view/pro
 import {useState} from "react";
 import {ProjectType} from "../project-small-view/project-type.tsx";
 
-
-
-
 function ProjectSlider() {
 
     const [selectedElement, setElement] = useState(0)

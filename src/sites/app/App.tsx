@@ -5,6 +5,7 @@ import WhoWeAreContainer from "./who-we-are/who-we-are-container.tsx";
 import MainContainer from "./main/main-container.tsx";
 import WhatWeDoContainer from "./what-we-do/what-we-do-container.tsx";
 import Facts from "./facts/facts.tsx";
+import ContactField from "./contact-field/contact-field.tsx";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                 <WhoWeAreContainer/>
                 <WhatWeDoContainer/>
                 <Facts/>
+                <ContactField />
             </div>
         </div>
       </main>

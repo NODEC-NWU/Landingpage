@@ -22,7 +22,7 @@ function WhoWeAreContainer() {
                             sit amet.</p>
                     </div>
                     <div className={"column"}>
-                        <ProjectSlider></ProjectSlider>
+                        <ProjectSlider/>
                     </div>
                 </div>
 
